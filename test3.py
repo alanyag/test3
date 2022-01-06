@@ -25,7 +25,7 @@ def load_data(ticker):
   return data
 
 data_load_state=st.text('數據載入中...')
-data_load_data(selected_stock)
+data=load_data(selected_stock)
 data_load_state.text('數據載入完畢')
 
 st.subheader('原始數據')
